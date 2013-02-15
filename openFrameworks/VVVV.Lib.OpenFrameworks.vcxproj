@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2A9BE419-F3C5-4CBC-9573-38F92165DFD0}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>oFvvvv</RootNamespace>
+    <ProjectName>VVVV.Nodes.OpenFrameworks.CLR</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="c:\openFrameworks\openFrameworks\libs\openFrameworksCompiled\project\vs2010\openFrameworksDebug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>c:\vvvv\vvvv-sdk\vvvv45\addonpack\lib\nodes\plugins</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(OF_DIR)\addons\ofxOpenNI2\libs\nite\include;$(OF_DIR)\addons\ofxOpenNI2\libs\libusb\include;$(OF_DIR)\addons\ofxOpenNI2\libs\openNI\include;$(OF_DIR)\addons\ofxOpenNI2\src;$(OF_DIR)\addons\ofxVVVV\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>openNI.lib;cairo-static.lib;pixman-1.lib;msimg32.lib;OpenGL32.lib;GLu32.lib;kernel32.lib;setupapi.lib;Vfw32.lib;comctl32.lib;glut32.lib;rtAudioD.lib;videoInput.lib;libfreetype.lib;FreeImage.lib;qtmlClient.lib;dsound.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;glew32s.lib;fmodex_vc.lib;glu32.lib;PocoFoundationmdd.lib;PocoNetmdd.lib;PocoUtilmdd.lib;PocoXMLmdd.lib;Ws2_32.lib;tess2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\OpenNI\Lib;$(OF_DIR)\libs\glut\lib\vs2010;$(OF_DIR)\libs\rtAudio\lib\vs2010;$(OF_DIR)\libs\FreeImage\lib\vs2010;$(OF_DIR)\libs\freetype\lib\vs2010;$(OF_DIR)\libs\quicktime\lib\vs2010;$(OF_DIR)\libs\fmodex\lib\vs2010;$(OF_DIR)\libs\videoInput\lib\vs2010;$(OF_DIR)\libs\cairo\lib\vs2010;$(OF_DIR)\libs\glew\lib\vs2010;$(OF_DIR)\libs\glu\lib\vs2010;$(OF_DIR)\libs\Poco\lib\vs2010;$(OF_DIR)\libs\tess2\lib\vs2010;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VVVV.Core, Version=1.0.4683.26291, Culture=neutral, PublicKeyToken=null">
+      <HintPath>c:\vvvv\vvvv-sdk\vvvv45\lib\core\VVVV.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="VVVV.Hosting, Version=1.0.4683.26352, Culture=neutral, PublicKeyToken=null">
+      <HintPath>c:\vvvv\vvvv-sdk\vvvv45\lib\core\VVVV.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="VVVV.PluginInterfaces, Version=2.0.4683.26352, Culture=neutral, PublicKeyToken=null">
+      <HintPath>c:\vvvv\vvvv-sdk\vvvv45\lib\core\VVVV.PluginInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="VVVV.Utils, Version=1.0.4683.26290, Culture=neutral, PublicKeyToken=null">
+      <HintPath>c:\vvvv\vvvv-sdk\vvvv45\lib\core\VVVV.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="VVVV.Utils3rdParty, Version=1.0.4683.26291, Culture=neutral, PublicKeyToken=null">
+      <HintPath>c:\vvvv\vvvv-sdk\vvvv45\lib\core\VVVV.Utils3rdParty.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNI.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNICapture.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNITracker.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNIUser.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNIUtils.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV\Node.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV\Pin.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV\Window.h" />
+    <ClInclude Include="WrappedApp.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Nodes.h" />
+    <ClInclude Include="WrappedWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNI.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNICapture.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNITracker.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNIUser.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNIUtils.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV\Window.cpp" />
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="WrappedApp.cpp" />
+    <ClCompile Include="Nodes.cpp" />
+    <ClCompile Include="WrappedWindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.ico" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="c:\openFrameworks\openFrameworks\libs\openFrameworksCompiled\project\vs2010\openframeworksLib.vcxproj">
+      <Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="c:\vvvv\vvvv-sdk\vvvv45\addonpack\src\nodes\plugins\GL\OpenGL\VVVV.Nodes.OpenGL.csproj">
+      <Project>{6a0afb1f-8219-4a08-85f7-b7f19b66ac16}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

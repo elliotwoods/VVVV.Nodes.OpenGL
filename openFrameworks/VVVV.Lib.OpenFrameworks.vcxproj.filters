@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="WrappedApp.cpp" />
+    <ClCompile Include="Nodes.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV\Window.cpp">
+      <Filter>ofxVVVV\ofxVVVV</Filter>
+    </ClCompile>
+    <ClCompile Include="WrappedWindow.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNI.cpp">
+      <Filter>ofxOpenNI2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNICapture.cpp">
+      <Filter>ofxOpenNI2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNITracker.cpp">
+      <Filter>ofxOpenNI2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNIUser.cpp">
+      <Filter>ofxOpenNI2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNIUtils.cpp">
+      <Filter>ofxOpenNI2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WrappedApp.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV.h">
+      <Filter>ofxVVVV</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV\Node.h">
+      <Filter>ofxVVVV\ofxVVVV</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV\Pin.h">
+      <Filter>ofxVVVV\ofxVVVV</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV\Window.h">
+      <Filter>ofxVVVV\ofxVVVV</Filter>
+    </ClInclude>
+    <ClInclude Include="WrappedWindow.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNI.h">
+      <Filter>ofxOpenNI2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNICapture.h">
+      <Filter>ofxOpenNI2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNITracker.h">
+      <Filter>ofxOpenNI2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNIUser.h">
+      <Filter>ofxOpenNI2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxOpenNI2\src\ofxOpenNIUtils.h">
+      <Filter>ofxOpenNI2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.ico" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ofxVVVV">
+      <UniqueIdentifier>{d43f10d5-1470-4960-abf5-1a2c93dcce0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxVVVV\ofxVVVV">
+      <UniqueIdentifier>{f2f4be84-a855-4104-9e1b-203d85e2d93e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxOpenNI2">
+      <UniqueIdentifier>{aa6217ef-80bb-47ca-b130-927fd1a712b8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

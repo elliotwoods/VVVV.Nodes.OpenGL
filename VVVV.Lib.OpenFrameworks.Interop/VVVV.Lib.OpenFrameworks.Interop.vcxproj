@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4253503B-1BEB-44F4-B648-428219C16598}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>VVVVLibOpenFrameworksInterop</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>..\openFrameworks;c:\openFrameworks\openFrameworks\addons\ofxVVVV\src;c:\openframeworks\openframeworks\libs\openFrameworks;c:\openframeworks\openframeworks\libs\openFrameworks\graphics;c:\openframeworks\openframeworks\libs\openFrameworks\app;c:\openframeworks\openframeworks\libs\openFrameworks\sound;c:\openframeworks\openframeworks\libs\openFrameworks\utils;c:\openframeworks\openframeworks\libs\openFrameworks\communication;c:\openframeworks\openframeworks\libs\openFrameworks\video;c:\openframeworks\openframeworks\libs\openFrameworks\types;c:\openframeworks\openframeworks\libs\openFrameworks\math;c:\openframeworks\openframeworks\libs\openFrameworks\3d;c:\openframeworks\openframeworks\libs\openFrameworks\gl;c:\openframeworks\openframeworks\libs\openFrameworks\events;c:\openframeworks\openframeworks\libs\glut\include;c:\openframeworks\openframeworks\libs\rtAudio\include;c:\openframeworks\openframeworks\libs\quicktime\include;c:\openframeworks\openframeworks\libs\freetype\include;c:\openframeworks\openframeworks\libs\freetype\include\freetype2;c:\openframeworks\openframeworks\libs\freeImage\include;c:\openframeworks\openframeworks\libs\fmodex\include;c:\openframeworks\openframeworks\libs\videoInput\include;c:\openframeworks\openframeworks\libs\glew\include\;c:\openframeworks\openframeworks\libs\glu\include;c:\openframeworks\openframeworks\libs\tess2\include;c:\openframeworks\openframeworks\libs\cairo\include\cairo;c:\openframeworks\openframeworks\libs\poco\include;c:\openframeworks\openframeworks\addons;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>cairo-static.lib;pixman-1.lib;msimg32.lib;OpenGL32.lib;GLu32.lib;kernel32.lib;setupapi.lib;Vfw32.lib;comctl32.lib;glut32.lib;rtAudioD.lib;videoInput.lib;libfreetype.lib;FreeImage.lib;qtmlClient.lib;dsound.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;glew32s.lib;fmodex_vc.lib;glu32.lib;PocoFoundationmdd.lib;PocoNetmdd.lib;PocoUtilmdd.lib;PocoXMLmdd.lib;Ws2_32.lib;tess2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:\openframeworks\openframeworks\libs\glut\lib\vs2010;c:\openframeworks\openframeworks\libs\rtAudio\lib\vs2010;c:\openframeworks\openframeworks\libs\FreeImage\lib\vs2010;c:\openframeworks\openframeworks\libs\freetype\lib\vs2010;c:\openframeworks\openframeworks\libs\quicktime\lib\vs2010;c:\openframeworks\openframeworks\libs\fmodex\lib\vs2010;c:\openframeworks\openframeworks\libs\videoInput\lib\vs2010;c:\openframeworks\openframeworks\libs\cairo\lib\vs2010;c:\openframeworks\openframeworks\libs\glew\lib\vs2010;c:\openframeworks\openframeworks\libs\glu\lib\vs2010;c:\openframeworks\openframeworks\libs\Poco\lib\vs2010;c:\openframeworks\openframeworks\libs\tess2\lib\vs2010;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>PocoFoundationd.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV\Factory.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV\Node.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV\Pin.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV\Window.h" />
+    <ClInclude Include="WrappedWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV\Window.cpp" />
+    <ClCompile Include="WrappedWindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\libs\openFrameworksCompiled\project\vs2010\openframeworksLib.vcxproj">
+      <Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\core\Core\Core.csproj">
+      <Project>{6ad35106-187b-4a3a-a801-e665cd12e020}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\core\Hosting\Hosting.csproj">
+      <Project>{f9a754a6-eea5-4761-9446-c2aaf9cf8b31}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\core\PluginInterfaces\PluginInterfaces.csproj">
+      <Project>{837c740a-485c-424c-8c38-086ed3dc73cb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\core\Utils\Utils.csproj">
+      <Project>{c3773330-81fa-4253-823e-1bde1529aa99}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenGL\VVVV.Nodes.OpenGL.csproj">
+      <Project>{6a0afb1f-8219-4a08-85f7-b7f19b66ac16}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

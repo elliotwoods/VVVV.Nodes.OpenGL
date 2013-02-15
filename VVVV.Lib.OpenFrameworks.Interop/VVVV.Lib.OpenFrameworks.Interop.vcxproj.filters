@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ofxVVVV">
+      <UniqueIdentifier>{b4ee285c-c95c-4c11-b37e-82d6621d0cb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxVVVV\src">
+      <UniqueIdentifier>{1928519f-8923-4a64-bfea-ccc1fb95c4ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxVVVV\src\ofxVVVV">
+      <UniqueIdentifier>{f0b5461a-a70f-455c-8102-5ad76a2a973c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WrappedWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV.h">
+      <Filter>ofxVVVV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV\Factory.h">
+      <Filter>ofxVVVV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV\Node.h">
+      <Filter>ofxVVVV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV\Pin.h">
+      <Filter>ofxVVVV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV\Window.h">
+      <Filter>ofxVVVV\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WrappedWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\openFrameworks\openFrameworks\addons\ofxVVVV\src\ofxVVVV\Window.cpp">
+      <Filter>ofxVVVV\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
